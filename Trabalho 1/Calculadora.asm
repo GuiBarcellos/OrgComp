@@ -1,16 +1,20 @@
+#UNIVERSIDADE DE SAO PAULO - INSTITUTO DE CIENCIAS MATEMATICAS E DE COMPUTACAO
+#1Âº Trabalho PrÃ¡tico de Organizacao e Arquitetura de Computadores
+#Alunos: Guilherme Alves Lindo, Guilherme Targon Marques Barcellos, Luan Icaro Pinto Arcanjo e Mateus Ferreira Gomes
+
 .data
 	.align 0
 	menu0: .asciiz "\nMenu:\n"
-	menu1: .asciiz "1 - Soma de 2 números\n"
-	menu2: .asciiz "2 - Subtracao de 2 números\n"
-	menu3: .asciiz "3 - Multiplicacao de 2 números\n"
-	menu4: .asciiz "4 - Divisao de 2 números\n"
+	menu1: .asciiz "1 - Soma de 2 nÃºmeros\n"
+	menu2: .asciiz "2 - Subtracao de 2 nÃºmeros\n"
+	menu3: .asciiz "3 - Multiplicacao de 2 nÃºmeros\n"
+	menu4: .asciiz "4 - Divisao de 2 nÃºmeros\n"
 	menu5: .asciiz "5 - Potencia de um numero\n"
 	menu6: .asciiz "6 - Raiz Quadrada\n"
-	menu7: .asciiz "7 - Tabuada de um número\n"
-	menu8: .asciiz "8 - Cálculo IMC\n"
-	menu9: .asciiz "9 - Fatorial de um número\n"
-	menu10: .asciiz "10 - Cálculo de sequencia de Fibonacci dado um intervalo\n"
+	menu7: .asciiz "7 - Tabuada de um nÃºmero\n"
+	menu8: .asciiz "8 - CÃ¡lculo IMC\n"
+	menu9: .asciiz "9 - Fatorial de um nÃºmero\n"
+	menu10: .asciiz "10 - CÃ¡lculo de sequencia de Fibonacci dado um intervalo\n"
 	menu11: .asciiz "11- Sair\n"
 	
 	continuar: .asciiz "\nAperte Enter para continuar\n"
@@ -552,7 +556,7 @@ imprime_menu:
 	syscall
 	
 	li $v0, 4
-	la $a0, menu6 #imprime a sétima linha da mensagem do menu
+	la $a0, menu6 #imprime a sÃ©tima linha da mensagem do menu
 	syscall
 	
 	li $v0, 4
